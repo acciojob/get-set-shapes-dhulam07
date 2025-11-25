@@ -23,7 +23,7 @@ class Square extends Animal {
 		return (this.width * this.height);
 	}
 	getPerimeter(){
-		return (this.side*4);
+		return (this.width *4);
 	}
 }
 
