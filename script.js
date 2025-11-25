@@ -22,7 +22,7 @@ class Square extends Animal {
 	get Area(){
 		return (this.width * this.height);
 	}
-	grt Perimeter(){
+	get Perimeter(){
 		return (this.side*4);
 	}
 }
