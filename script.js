@@ -1,7 +1,46 @@
 //complete this code
-class Rectangle {}
+class Rectangle {
+	constructor(width,height){
+		this.width=width;
+		this.height=height;
+	}
+	get width(){
+		return (this.width);
+	}
+	get height(){
+		return (this.height);
+	}
+	getArea(){
+		console.log(this.width * this.height);
+	}
+}
 
-class Square extends Animal {}
+class Square extends Animal {
+	constructor(side){
+		super(side,side);
+	}
+	getArea(){
+		console.log(this.width * this.height);
+	}
+	grtPerimeter(){
+		console.log(this.side*4);
+	}
+}
+
+// Creating a Rectangle instance
+const rectangle = new Rectangle(5, 10);
+console.log(rectangle.width); // Output: 5
+console.log(rectangle.height); // Output: 10
+console.log(rectangle.getArea()); // Output: 50
+
+// Creating a Square instance
+const square = new Square(7);
+console.log(square.width); // Output: 7
+console.log(square.height); // Output: 7
+console.log(square.getArea()); // Output: 49
+console.log(square.getPerimeter()); // Output: 28
+
+
 
 // Do not change the code below this line
 window.Rectangle = Rectangle;
